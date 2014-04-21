@@ -56,3 +56,4 @@ end
 
 
 # 4. Reflection 
+#instead of initializing my sum variable to 0 I set it to the array. I'm happy to have figured out how to use ranges in a case statement
