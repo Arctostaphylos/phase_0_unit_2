@@ -44,3 +44,6 @@ def median (array)
 end
 
 # 4. Reflection 
+# this challenge was the same as the group challenge, so the essential logic was familiar. I got tripped
+# up because my sum was acting like an integer and not a float. I could also have solved by
+# saying return sum/2.0
