@@ -21,8 +21,15 @@
 
 # 3. Initial Solution
 
-
-
+def essay_writer (name, date, gender, thesis)
+	data = {"name" => name, "date" => date, "gender" => gender, "thesis" => thesis}
+	if data["gender"] == "male"
+		pronoun = "He"
+	else
+		pronoun = "She"	
+	end
+	return "#{data["name"]} lived in #{data["date"]}. #{pronoun} was an important person. #{data[thesis]}. I have learned a lot about #{data["name"]}'s contribution."		
+end
 
 # 4. Refactored Solution
 
@@ -34,9 +41,9 @@
 
 
 # 1. DRIVER TESTS GO BELOW THIS LINE
-
-
-
+puts essay_writer("George Washington", 1776, "male", "He chopped down a cherry tree, but did not lie") == "George Washington lived in 1776. He was an important person. He chopped down a cherry tree, but did not lie. I have learned a lot about George Washington's contribution."
+puts essay_writer("Harrison Ford", 1976, "male", "He is my favorite actor") == "Harrison Ford lived in 1976. He was an important person. He is my favorite movie actor. I have learned a lot about Harrison Ford's contribution."
+puts essay_writer("Marie Curie", 1903, "female", "She discovered radioactivity") == "Marie Curie lived in 1903. She was an important person. She discovered radioactivity. I have learned a lot about Marie Curie's contribution."
 
 
 
