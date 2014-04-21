@@ -18,7 +18,20 @@
 # return the resulting string with a period added to the end.
 
 # 2. Initial Solution
+def total (array)
+	sum = 0
+	array.each {|x| sum += x}
+	return sum
 
+def sentence_maker (array)
+	sentence = array[0].capitalize
+	index = 1
+	while index < array.length
+		sentence = sentence + " " + array[index]
+		index += 1
+	end
+	return sentence + "."
+end
 
 
 
