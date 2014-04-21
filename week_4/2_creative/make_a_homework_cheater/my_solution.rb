@@ -53,5 +53,6 @@ puts essay_writer("Marie Curie", 1903, "female", "She discovered radioactivity")
 
 
 # 5. Reflection 
-
+# I haven't worked with hashes much in Ruby, so it was helpful to see that I could use parameters directly in the literal hash notation, and that I could also use string interpolation with hashes.
+# My refactoring was mostly a matter of fixing a couple of typos.
 
