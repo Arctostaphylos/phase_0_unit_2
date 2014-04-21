@@ -55,3 +55,4 @@ def sentence_maker (array)
 end
 
 # 4. Reflection 
+# I didn't anticipate the sentence array could include numbers, so I had to convert each element to a string as I added to my sentence
