@@ -16,11 +16,19 @@
 # starting from the back of the string, add each character of the string to the front of an array.
 # join the array into a string and return it
 
-
-
 # 2. Initial Solution
 
-
+def separate_comma(num)
+	number = num.to_s
+	counter = 1
+	num_array = []
+	until counter == number.length
+		num_array.unshift(",") if counter%4 == 0 
+		num_array.unshift(number[-counter])	
+		counter +=1
+	end	
+	return num_array.join("")
+end
 
 
 # 3. Refactored Solution
