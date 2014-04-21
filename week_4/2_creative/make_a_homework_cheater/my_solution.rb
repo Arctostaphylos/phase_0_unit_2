@@ -10,9 +10,13 @@
 
 # 2. Pseudocode
 
-# Input:
-# Output:
-# Steps:
+# Input: Name, Date, Gender, Thesis
+# Output: string that follows the template
+# Steps: 
+# create a hash to store the name, date, gender and thesis.
+# add each value from the parameters to the hash
+# define a pronoun variable that will be "he" if gender is male, "she" if gender is female
+# puts a string with the hash values interpolated.
 
 
 # 3. Initial Solution
