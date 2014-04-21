@@ -18,11 +18,41 @@
 
 # 2. Initial Solution
 
-
+#def get_grade (array)
+#	sum = array.each {|x| sum += x}
+#	case average
+#	when 90..100
+#		return "A"
+#	when 80..89
+#		return "B"
+#	when 70..79
+#		return "C"
+#	when 60..69
+#		return "D"
+#	else
+#		return "F"		
+#	end
+#end			
 
 
 # 3. Refactored Solution
-
+def get_grade (array)
+	sum = 0
+	array.each {|x| sum += x}
+	average = sum/array.length
+	case average
+	when 90..100
+		return "A"
+	when 80..89
+		return "B"
+	when 70..79
+		return "C"
+	when 60..69
+		return "D"
+	else
+		return "F"		
+	end
+end			
 
 
 # 4. Reflection 
