@@ -17,7 +17,16 @@
 
 
 # 2. Initial Solution
-
+def median (array)
+	array_sorted = array.sort
+	items = array_sorted.length
+	if items%2 == 0
+		sum = array_sorted[items/2] + array_sorted[items/2 - 1]
+		return sum/2
+	else
+		return array_sorted[items/2]
+	end
+end
 
 
 
