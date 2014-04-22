@@ -18,21 +18,34 @@
 
 # 2. Initial Solution
 
+#def separate_comma(num)
+#	number = num.to_s
+#	counter = 1
+#	num_array = []
+#	until counter == number.length
+#		num_array.unshift(",") if counter%4 == 0 
+#		num_array.unshift(number[-counter])	
+#		counter +=1
+#	end	
+#	return num_array.join("")
+#end
+
+
+# 3. Refactored Solution
 def separate_comma(num)
 	number = num.to_s
 	counter = 1
 	num_array = []
 	until counter == number.length
-		num_array.unshift(",") if counter%4 == 0 
 		num_array.unshift(number[-counter])	
+		num_array.unshift(",") if counter%3 == 0 
+		
 		counter +=1
 	end	
 	return num_array.join("")
 end
 
 
-# 3. Refactored Solution
-
-
-
 # 4. Reflection 
+# I don't know why I initially set the point to insert the comma to be when the counter was divisible by 4. 
+# The key to making this work was the order of operations, to push the number to the array before adding the comma.
