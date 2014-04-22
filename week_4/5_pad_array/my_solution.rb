@@ -19,9 +19,13 @@
 # add the two arrays together
 
 # 2. Initial Solution
-
-
-
+def pad (size, value = nil)
+	return self if self.length >= size
+	difference = size - self.length
+	pad_array = Array.new(size, value) 
+	pad_array = self + pad_array
+	return pad_array
+end
 
 # 3. Refactored Solution
 
