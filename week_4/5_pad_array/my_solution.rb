@@ -35,7 +35,7 @@ class Array
 		return final_array if self.length >= size
 		difference = size - self.length
 		pad_array = Array.new(difference, value) 
-		final_array = self + pad_array
+		final_array = final_array + pad_array
 		return final_array
 	end
 
@@ -49,3 +49,8 @@ class Array
 end	
 
 # 4. Reflection 
+# first challenge was to understand the difference between private methods and
+# class methods. By defining the new methods within the Array class 
+# I am making my new methods available to any instance of the Array class.
+# The second clarification was understanding that I needed to create a new
+# array for the non-destructive version of the method. 
