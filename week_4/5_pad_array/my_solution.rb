@@ -19,16 +19,33 @@
 # add the two arrays together
 
 # 2. Initial Solution
-def pad (size, value = nil)
-	return self if self.length >= size
-	difference = size - self.length
-	pad_array = Array.new(size, value) 
-	pad_array = self + pad_array
-	return pad_array
-end
+#def pad (size, value = nil)
+#	return self if self.length >= size
+#	difference = size - self.length
+#	pad_array = Array.new(size, value) 
+#	pad_array = self + pad_array
+#	return pad_array
+#end
 
 # 3. Refactored Solution
+class Array
+	def pad (size, value = nil)
+		final_array = []
+		self.each {|x| final_array << x}
+		return final_array if self.length >= size
+		difference = size - self.length
+		pad_array = Array.new(difference, value) 
+		final_array = self + pad_array
+		return final_array
+	end
 
-
+	def pad!(size,value = nil)
+		return self if self.length >= size
+		difference = size - self.length
+		pad_array = Array.new(difference, value) 
+		self.concat(pad_array) 
+		return self
+	end
+end	
 
 # 4. Reflection 
