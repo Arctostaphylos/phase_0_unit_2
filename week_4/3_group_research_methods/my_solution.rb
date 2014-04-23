@@ -14,7 +14,13 @@ def my_hash_finding_method(source, thing_to_find)
 end
 
 # Identify and describe the ruby method you implemented. 
-# 
+# select on an array returns a new array of elements for which the code
+# block returns true. In this case I was testing whether each element in
+# the source array included a particular letter.
+# select on a hash returns a hash of the key/value pairs for which the
+# code block is true. In this case, I was testing whether the age matched 
+# the value 3. In order to return an array of the pet names, I called #keys
+# on the resulting hash.
 #
 #
 
@@ -78,10 +84,6 @@ p my_array_deletion_method(i_want_pets, "a") == ["I", 4, "pets", "but", "I", "on
 p my_hash_deletion_method(my_family_pets_ages, "George") == {"Evi" => 8, "Hoobie" => 5, "Bogart" => 6, "Poly" => 6, "Annabelle" => 2, "Ditto" => 5}
 
 # Reflect!
-# select on an array returns a new array of elements for which the code
-# block returns true. In this case I was testing whether each element in
-# the source array included a particular letter.
-# select on a hash returns a hash of the key/value pairs for which the
-# code block is true. In this case, I was testing whether the age matched 
-# the value 3. In order to return an array of the pet names, I called #keys
-# on the resulting hash.
+# the real stumbling block for me was getting an array of keys from the
+# hash once I had selected for the particular value. I didn't realize you
+# could chain a method after a code block, but it worked!
