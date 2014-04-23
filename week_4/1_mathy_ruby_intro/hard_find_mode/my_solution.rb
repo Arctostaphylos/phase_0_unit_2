@@ -20,8 +20,13 @@
 # return the answer array
 
 # 2. Initial Solution
-
-
+def mode(arr)
+	h = Hash.new(0)
+	arr.each{|x| h[x] = h[x]+1}
+	mode_array = []
+	h.each{|k,v| mode_array << k if v == h.values.max}
+	return mode_array
+end
 
 
 # 3. Refactored Solution
