@@ -40,3 +40,8 @@ end
 
 
 # 4. Reflection 
+# When I first was writing the Pseudocode for this challenge I was thinking I
+# would need an if/else statement to test if the array element was already
+# present as a key in the hash, but then I realized that even if it was already
+# present I was going to overwrite the value by adding one to it. Initializing
+# the hash to have a default value of 0 was the key idea.
