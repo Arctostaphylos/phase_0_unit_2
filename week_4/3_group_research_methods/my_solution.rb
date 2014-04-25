@@ -41,17 +41,27 @@ end
 
 # Person 3
 def my_array_sorting_method(source)
-  # Your code here!
+  source.sort_by { |e| e.to_s }
 end
 
 def my_hash_sorting_method(source)
-  # Your code here!
+  def my_hash_sorting_method(source)
+   source.sort_by {|name, age| age}
+end
 end
 
 # Identify and describe the ruby method you implemented. 
-# 
-#
-#
+=begin
+sort_by is a more flexible version of 'sort' becuase it allows you to provide expressions to better control the sort.  
+sort_by worked for both sorting methods becuase the expression syntax is flexable.  
+
+In my_array_sorting_method, the expression allows us to transform the fixnum values within the string to strings.  
+This is important as otherwise the sort_by method would not know how to sort those values.  This ability to transform 
+the fix num values into strings is also why we can't just use a 'sort' method.
+
+In my_hash_sorting_method, the expression allows us to define the key (name) and value (age) and then choose which 
+perameter we want to sort the hash by.  
+=end
 
 
 # Person 4
