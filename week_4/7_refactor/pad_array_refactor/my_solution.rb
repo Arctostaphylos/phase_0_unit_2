@@ -94,3 +94,8 @@ end
 
 
 # 5. Reflection
+# For my refactoring I changed strategy and used #times to add the padding value to the arrays. 
+# I also incorporated replace and dup. This was a somewhat humbling challenge as I was very
+# confident that I'd found a good solution, and then to find these more elegant solutions
+# made me realize that it's easy to get stuck in thinking one's initial solution is the only
+# possible solution. It's also a lesson that looking at other people's code is really helpful.
