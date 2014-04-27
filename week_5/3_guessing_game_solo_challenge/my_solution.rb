@@ -80,3 +80,8 @@ p game.solved? == true
 
 
 # 5. Reflection 
+# the #guess method was pretty straightforward, but I was stumped on how to 
+# implement the #solved? method until I recognized that I needed another
+# instance variable to keep track of whether the game had been solved. The
+# @solved variable is a way for the object to know whether or not it's been
+# solved.  
