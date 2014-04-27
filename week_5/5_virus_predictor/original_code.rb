@@ -1,10 +1,10 @@
 # U2.W5: Virus Predictor
 
-# I worked on this challenge [by myself, with: ].
+# I worked on this challenge [by myself].
 
 # EXPLANATION OF require_relative
-#
-#
+# loads the file in the file path relative to the document requesting it. The file contains a 
+# hash of hashes, with symbols as keys.
 require_relative 'state_data'
 
 class VirusPredictor
