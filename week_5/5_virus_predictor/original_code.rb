@@ -8,7 +8,7 @@
 require_relative 'state_data'
 
 class VirusPredictor
-
+# intializes a virus predictor object with the following characteristics  
   def initialize(state_of_origin, population_density, population, region, regional_spread)
     @state = state_of_origin
     @population = population
@@ -16,6 +16,11 @@ class VirusPredictor
     @region = region
     @next_region = regional_spread
   end
+# calls the two private methods with the appropriate parameters. It's called with instance variables
+# because instance variables are available to any method in the class - they are associated with
+# a particular object, like the object alabama created below. As long as self is the object alabama
+# the instance variables created when alabama was initialized will be availble to any method call
+# received by the object alabama
 
   def virus_effects  #HINT: What is the SCOPE of instance variables?
     predicted_deaths(@population_density, @population, @state)
@@ -23,7 +28,13 @@ class VirusPredictor
   end
 
   private  #what is this?  what happens if it were cut and pasted above the virus_effects method
+  #private methods can't be called with an explicit receiver. If you put the private above the
+  #virus_effects method, the state objects that are created by initialize would not be able
+  #to call the method. The method virus_effects can call the private methods because the receiver
+  #in this case is self and isn't directly specified.
 
+# determines the number of deaths predicted based on the population density. The total population
+# of the state is divided by a factor that varies with density.
   def predicted_deaths(population_density, population, state)
     if @population_density >= 200
       number_of_deaths = (@population * 0.4).floor
@@ -40,7 +51,7 @@ class VirusPredictor
     print "#{@state} will lose #{number_of_deaths} people in this outbreak"
 
   end
-
+# determines how fast the virus will spread based on state popultion density
   def speed_of_spread(population_density, state) #in months
     speed = 0.0
 
