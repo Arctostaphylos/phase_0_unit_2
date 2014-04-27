@@ -25,15 +25,13 @@ class Die
   end
   
   def roll
-    return (rand(sides))+1
+    return (rand(@sides))+1
   end
 end
 
 
 
 # 4. Refactored Solution
-
-
 
 
 
@@ -49,3 +47,8 @@ p die.roll >=1 && die.roll <= 6
 
 
 # 5. Reflection 
+# For this challenge, I had to look up how to raise an argument, how to define instance 
+# variables in the initialize method, and how to use rand(max). But I found the general
+# concepts of the challenge to be familiar and straightforward.
+
+
