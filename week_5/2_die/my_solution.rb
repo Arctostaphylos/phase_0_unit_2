@@ -17,12 +17,20 @@
 
 class Die
   def initialize(labels)
+  	if labels.length == 0
+  		raise ArgumentError.new ("array can't be empty")
+  	end
+  	@labels = labels
+  	@sides = labels.length
   end
 
   def sides
+  	return @sides
   end
 
   def roll
+  	index = rand(@sides)
+  	return @labels[index]
   end
 end
 
@@ -37,8 +45,9 @@ end
 
 # 1. DRIVER TESTS GO BELOW THIS LINE
 
-
-
+die = Die.new(["A", "B", "C"])
+p die.sides == 3
+p die.roll == "A" || "B" || "C"
 
 
 
