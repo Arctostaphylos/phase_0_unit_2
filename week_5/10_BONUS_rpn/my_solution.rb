@@ -87,4 +87,8 @@ p calc.evaluate('1 2 3 4 + + +') == 10
 
 
 # 5. Reflection 
-# 
+# The challenge for this one was finding a way to test whether something was a number or not. I
+# pulled a regular expression off stack overflow, but it was too inclusive and treated the 
+# operators as numbers. Otherwise I just followed the algorithm from the wikipedia article on
+# reverse polish notation. I would like to get rid of the if/else tree that checks the identity
+# of the operator, but I don't know how to convert a string to a mathmatical method. 
