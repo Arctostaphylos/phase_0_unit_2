@@ -73,3 +73,10 @@ p card2.check_card == false
 
 
 # 5. Reflection 
+# The hardest part of this exercise was writing the pseudocode. Once I had a clear idea
+# of the steps it was pretty clear how to proceed in the code. The basic strategy of turning
+# the numbers into strings to separate the characters and then turn them back into 
+# integers works, but I've also created three different arrays to solve the problem
+# and I wonder if there's a more elegant way to do it. For this challenge I did a lot
+# of testing in irb of the different array methods to make sure they were going to do
+# what I thought. I'm feeling comfortable with the material so far.
