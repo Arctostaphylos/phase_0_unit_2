@@ -51,8 +51,11 @@ shows the current state of the files and directories in your repo.
 ## Release 4: Git Workflow
 
 - Push files to a remote repository
-First connect your local repo to the remote repository using 
+First connect your local system to the remote repository by cloning the repo you want to work on.
+Then you can make changes and use the push command to push the changes to the remote repository.
+
 - Fetch changes
 - Commit locally
+First add the file you want to commit in order to stage it. Then use git commit -m to locally commit the file. 
 
 ## Release 5: Reflection
