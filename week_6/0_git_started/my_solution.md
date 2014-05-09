@@ -51,10 +51,14 @@ shows the current state of the files and directories in your repo.
 ## Release 4: Git Workflow
 
 - Push files to a remote repository
-First connect your local system to the remote repository by cloning the repo you want to work on.
+First connect your local system to the remote repository by cloning the repo you want to work on. That will create a default remote called "origin"
+You need to run git init to create a local git repository.
 Then you can make changes and use the push command to push the changes to the remote repository.
 
 - Fetch changes
+Once you've cloned a branch from your GitHub repo, you need to also connect up to the repo you forked 
+from in order to fetch any changes to that original branch. Use git remote add upstream address, which will assign the original repo (at the address specified) to the name "upstream". Now you can run git fetch upstream and git will pull in changes not present in your local repo.
+
 - Commit locally
 First add the file you want to commit in order to stage it. Then use git commit -m to locally commit the file. 
 
