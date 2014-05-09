@@ -63,3 +63,4 @@ from in order to fetch any changes to that original branch. Use git remote add u
 First add the file you want to commit in order to stage it. Then use git commit -m to locally commit the file. 
 
 ## Release 5: Reflection
+I think this was the hardest challenge for me as I find working with git confusing. I have a clearer idea now about the basic workflow with git, but I'm not very confident about using git. I think the breakthrough for me was understanding that if I fetch a repo it automatically creates a default remote, because I wasn't able to connect my local repos to the remote if I'd already fetched them using the GitHub application.
